@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &200618462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2586409167821250346, guid: 6c299308eeca3b6468490bfd58b39f21, type: 3}
+  m_PrefabInstance: {fileID: 1255274724026770523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &245963551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,6 +336,8 @@ MonoBehaviour:
   speed: 6.5
   hasPowerup: 0
   powerupIndicator: {fileID: 409885255}
+  currentPowerUp: 0
+  rocketPrefab: {fileID: 2386987493951707385, guid: 84192480c19c3c34da9c765a5945f328, type: 3}
 --- !u!54 &963307696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -795,10 +802,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b5ebe4729ab7f24684825e608682479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4651635655733416225, guid: 277b6645a650c6a4c8bd652af7bebc18, type: 3}
+  enemyPrefabs:
+  - {fileID: 4651635655733416225, guid: 277b6645a650c6a4c8bd652af7bebc18, type: 3}
+  - {fileID: 4651635655733416225, guid: b0a9d50aaddbb3944b00727009425a9b, type: 3}
   enemyCount: 0
   waveNumber: 1
-  powerupPrefab: {fileID: 2586409167821250346, guid: 6c299308eeca3b6468490bfd58b39f21, type: 3}
+  powerupPrefabs:
+  - {fileID: 200618462}
+  - {fileID: 2586409167821250346, guid: ec9ea2c8fed86c248804a617af736d84, type: 3}
 --- !u!4 &2028618783
 Transform:
   m_ObjectHideFlags: 0
